@@ -26,7 +26,8 @@ h1 {
     background: transparent;
 }
 
-.navbar-brand img,.navbar-brand1 img {
+.navbar-brand img,
+.navbar-brand1 img {
     height: 4rem;
 }
 
@@ -34,7 +35,7 @@ h1 {
     height: 4rem;
     position: relative;
     top: 0.625rem;
-    left:0.625rem;
+    left: 0.625rem;
 }
 
 .navbar-nav .nav-link {
@@ -75,6 +76,21 @@ h1 {
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
+@media (max-width: 991px) {
+    .navbar-brand img,
+    .navbar-brand1 img {
+        height: 3rem;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1.5rem;
+    }
+
+    .navbar-toggler {
+        top: 15px;
+        right: 15px;
+    }
+}
 
 .quick-menu {
     display: none;
@@ -108,13 +124,24 @@ h1 {
 .navbar-nav {
     display: flex;
     list-style: none;
+    align-items: center;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+}
 
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .nav-item {
-    width: calc(22% - 20px);
+    width: 15%;
+    height: 15%;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -123,25 +150,28 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100px;
-    width: 100px;
+    width: 100%;
+    height: 70px;
 }
 
 .nav-app {
-    height: 75px;
-    width: 75px;
+    height: 70px;
+    width: 70px;
     border: 1px solid rgba(60, 60, 60, 0.8);
     border-radius: 10px;
-}
-
-.home img {
-    width: 70px;
-    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-app img {
-    height: auto;
-    margin-top: 20px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.home img {
+    width: 100%;
 }
 
 .nav-content span {
@@ -159,13 +189,22 @@ h1 {
     font-size: 1.8rem;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
     #regularNavbar {
         display: none !important;
     }
 
     #quickMenu {
         display: block !important;
+    }
+}
+
+@media (min-width: 799px) {
+    .navbar-expand-lg .navbar-collapse {
+        display: -ms-flexbox!important;
+        display: flex!important;
+        -ms-flex-preferred-size: auto;
+        flex-basis: auto;
     }
 }
 
@@ -206,8 +245,8 @@ h1 {
     display: none;
 }
 
-@media (max-width: 48rem) {
-    body{
+@media (max-width: 50rem) {
+    body {
         padding-left: 1rem;
         padding-right: 1rem;
     }
