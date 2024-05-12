@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+
+<body style="background-color: #101f31">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background:none;" id="regularNavbar">
+        <a class="navbar-brand" href="#"><img src="Trendles-icon.png" alt="Logo" /></a>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#Home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Magazine">Magazine</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Clubs
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="litsoc.html">Litsoc</a>
+                        <a class="dropdown-item" href="#">Chitrachaya</a>
+                        <a class="dropdown-item" href="design.html">Design</a>
+                        <a class="dropdown-item" href="#">Others</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#OurTeam">Our Team</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background:none; display: none;" id="quickMenu">
+        <a class="navbar-brand" href="#"><img src="Trendles-icon.png" alt="Logo" /></a>
+        <button class="navbar-toggler" align="right" type="button" onclick="toggleQuickMenu()">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="quick-menu" id="quickMenuContent">
+            <a class="navbar-brand1" href="#"><img src="Trendles-icon.png" alt="Logo" /></a>
+            <div class="close-button"><img src="into.png" height="20px" width="20px"></div>
+            <p align="center" style="font-size: 20px;">Quick Menu</p>
+            <div class="nav-container">
+                <ul class="quicknavbar-nav">
+                    <li class="nav-item">
+                        <div class="nav-content">
+                            <div class="nav-app">
+                                <div class="home">
+                                    <img src="Trendles-dark-icon 2.png" alt="Home">
+                                </div>
+                            </div>
+                            <span>Home</span>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav-content">
+                            <div class="nav-app">
+                                <img src="Magazine.png" alt="Events">
+                            </div>
+                            <span>Magazine</span>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav-content">
+                            <div class="nav-app">
+                                <img src="Literary.png" href="litsoc.html" alt="Magazine">
+                            </div>
+                            <span>Litsoc</span>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav-content">
+                            <div class="nav-app">
+                                <img src="Photo.png" alt="Events">
+                            </div>
+                            <span>Chitrachaya</span>
+                        </div>
+                    </li>
+                </ul>
+            </div><br>
+            <div class="nav-container">
+                <ul class="quicknavbar-nav">
+                    <li class="nav-item">
+                        <div class="nav-content">
+                            <div class="nav-app">
+                                <img src="Design.png" href="design.html" alt="Home">
+                            </div>
+                            <span>Design</span>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav-content">
+                            <div class="nav-app">
+                                <img src="Video.png" alt="Magazine">
+                            </div>
+                            <span>Our Team</span>
+                        </div>
+                    </li>
+                </ul>
+            </div><br>
+        </div>
+    </nav>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <div class="container">
+        <div class="left-content">
+            <div class="text-content"><br>
+                <p class="head">THE LOVE OF DESIGN,</p>
+                <p class="para">is in our very hearts and souls. Here at the Design Club of IIITK, we look to inovate
+                    and create masterpieces that’ll shine brighter than any star and unveil the beauty and power of the
+                    dormant talent hidden at our very own college.
+                </p>
+            </div>
+        </div>
+        <div class="image-content">
+            <img src="Design logo.png" alt="Dance Icon" />
+        </div>
+        <div class="image-after">
+            <img src="Design after.png" />
+        </div>
+    </div>
+    <P class="hh">SHOWCASE</p>
+    <div class="design">
+        <div>
+            <div class="image-box">
+                <a class="open" data-modal-target="#modal1"><img src="1.png" id="resizable-image"></a>
+            </div>
+            <div class="modal-container" id="modal1">
+                <div>
+                    <div class="close">Close<img src="into.png" height="20px" width="20px"></div><br>
+                    <div class="image-modal">
+                        <img src="1.png">
+                    </div>
+                    <div class="prof">
+                        <a><button class="profile"><img src="profile.png"></button></a>
+                        <p>Pheonix coi</p>
+                    </div>
+                </div>
+            </div>
+            <div class="prof">
+                <a><button class="profile"><img src="profile.png"></button></a>
+                <p>Pheonix coi</p>
+            </div>
+        </div>
+        <div>
+            <div class="image-box">
+                <a class="open" data-modal-target="#modal2"><img src="2.jpg" id="resizable-image"></a>
+            </div>
+            <div class="modal-container" id="modal2">
+                <div>
+                    <div class="close">Close<img src="into.png" height="20px" width="20px"></div><br>
+                    <div class="image-modal">
+                        <img src="2.jpg">
+                    </div>
+                    <div class="prof">
+                        <a><button class="profile"><img src="profile.png"></button></a>
+                        <p>Pheonix coi</p>
+                    </div>
+                </div>
+            </div>
+            <div class="prof">
+                <a><button class="profile"><img src="profile.png"></button></a>
+                <p>Pheonix coi</p>
+            </div>
+        </div>
+        <div>
+            <div class="image-box">
+                <a class="open" data-modal-target="#modal3"><img src="3.jpg" id="resizable-image"></a>
+            </div>
+            <div class="modal-container" id="modal3">
+                <div>
+                    <div class="close">Close<img src="into.png" height="20px" width="20px"></div><br>
+                    <div class="image-modal">
+                        <img src="3.jpg">
+                    </div>
+                    <div class="prof">
+                        <a><button class="profile"><img src="profile.png"></button></a>
+                        <p>Pheonix coi</p>
+                    </div>
+                </div>
+            </div>
+            <div class="prof">
+                <a><button class="profile"><img src="profile.png"></button></a>
+                <p>Pheonix coi</p>
+            </div>
+        </div>
+        <div>
+            <div class="image-box">
+                <a class="open" data-modal-target="#modal4"><img src="4.jpg" id="resizable-image"></a>
+            </div>
+            <div class="modal-container" id="modal4">
+                <div>
+                    <div class="close">Close<img src="into.png" height="20px" width="20px"></div><br>
+                    <div class="image-modal">
+                        <img src="Trendles-dark-icon 2.png">
+                    </div>
+                    <div class="prof">
+                        <a><button class="profile"><img src="profile.png"></button></a>
+                        <p>Pheonix coi</p>
+                    </div>
+                </div>
+            </div>
+            <div class="prof">
+                <a><button class="profile"><img src="profile.png"></button></a>
+                <p>Pheonix coi</p>
+            </div>
+        </div>
+    </div>
+    <div class="end">
+        <div style="align-items: center;margin-top: 1rem;">
+            <a href="#instagram"><button class="icon"><i class="fa-brands fa-instagram"></i></button></a>
+            <a href="#youtube"><button class="icon"><i class="fa-brands fa-youtube"></i></button></a>
+            <a href="#mail"><button class="icon"><i class="far fa-envelope"></i></button></a>
+            <a href="https://www.linkedin.com/company/trendles/"><button class="icon"><i
+                        class="fab fa-linkedin"></i></button></a>
+        </div><br>
+        <p style="margin: 0;">trendles@iiitkottayam.ac.in</p>
+        <p style="margin: 0;">Copyright © 2024 by Trendles | All Rights Reserved</p>
+        <p>Indian Institute of Information Technology Kottayam</p>
+    </div>
+    <script src="trendles.js"></script>
+</body>
+
+</html>
