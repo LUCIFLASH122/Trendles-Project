@@ -351,14 +351,32 @@ h1 {
         margin: 0 !important;
     }
 
-    .box {
+    .box,
+    .image-box {
         height: 18rem !important;
         width: 18rem !important;
+    }
+
+    .design {
+        grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr)) !important;
+        grid-gap: 1rem !important;
     }
 
     .preview-text,
     .full-text {
         font-size: 1rem !important;
+    }
+}
+
+@media (max-width:40rem) {
+    .design {
+        justify-items: center;
+        /* Center items horizontally */
+    }
+
+    .design div {
+        align-self: center;
+        /* Center items vertically */
     }
 }
 
@@ -543,23 +561,24 @@ h1 {
     margin: 0;
 }
 
-.list {
-    font-weight: 500;
-    list-style-type: none;
-    padding: 0;
-}
-
 .end {
     background-color: rgb(11, 10, 14);
     height: auto;
     font-weight: 1000;
     text-align: center;
 }
+
 .design {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
-    grid-gap: 20px;
+    grid-gap: 2rem;
+    justify-items: center;
 }
+
+.design div {
+    align-items: center;
+}
+
 .image-modal {
     background-color: black;
     border-radius: 1.5rem;
@@ -611,6 +630,7 @@ h1 {
     object-fit: contain;
     aspect-ratio: 1;
 }
+
 .prof {
     display: flex;
     align-items: center;
