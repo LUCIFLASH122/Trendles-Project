@@ -101,3 +101,61 @@ closeButton.addEventListener('click', function () {
     const quickMenu = document.getElementById('quickMenuContent');
     quickMenu.style.display = 'none';
 });
+document.addEventListener('DOMContentLoaded', () => {
+    const hash = window.location.hash;
+    const defaultDiv = 'div1';
+    const defaultButton = 'button1';
+
+    if (hash) {
+        const targetDiv = hash.substring(1);
+        const targetButton = Array.from(document.querySelectorAll('.button-container button')).find(button => button.onclick.toString().includes(targetDiv));
+        if (targetButton) {
+            toggleDiv(targetDiv, targetButton);
+        } else {
+            document.getElementById(defaultButton).classList.add('active');
+            document.getElementById(defaultDiv).style.display = 'block';
+        }
+    } else {
+        document.getElementById(defaultButton).classList.add('active');
+        document.getElementById(defaultDiv).style.display = 'block';
+    }
+});
+
+function toggleDiv(divId, button) {
+    const divs = document.querySelectorAll('.content-div');
+    const buttons = document.querySelectorAll('.button-container button');
+
+    divs.forEach(div => div.style.display = 'none');
+    buttons.forEach(btn => btn.classList.remove('active'));
+
+    document.getElementById(divId).style.display = 'block';
+    button.classList.add('active');
+
+    window.location.hash = divId;
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    const items = document.querySelectorAll(".timeline ul li");
+
+    const isInViewport = el => {
+        const rect = el.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    };
+
+    const run = () => {
+        items.forEach(item => {
+            if (isInViewport(item)) {
+                item.classList.add("show");
+            }
+        });
+    };
+
+    window.addEventListener("load", run);
+    window.addEventListener("resize", run);
+    window.addEventListener("scroll", run);
+});
