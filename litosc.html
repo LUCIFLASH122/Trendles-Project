@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background:none;" id="regularNavbar">
+    <a class="navbar-brand" href="#"><img src="Trendles-icon.png" alt="Logo" /></a>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Events.html">Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Magazine.html">Magazine</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Clubs
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="litsoc.html">Litsoc</a>
+            <a class="dropdown-item" href="chitrachaya.html">Chitrachaya</a>
+            <a class="dropdown-item" href="design.html">Design</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="OurTeam.html">Our Team</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background:none; display: none;" id="quickMenu">
+    <a class="navbar-brand" href="#"><img src="Trendles-icon.png" alt="Logo" /></a>
+    <button class="navbar-toggler" align="right" type="button" onclick="toggleQuickMenu()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="quick-menu" id="quickMenuContent">
+      <a class="navbar-brand1" href="#"><img src="Trendles-icon.png" alt="Logo" /></a>
+      <div class="close-button"><img src="into.png" height="20px" width="20px"></div>
+      <p align="center" style="font-size: 20px;">Quick Menu</p>
+      <div class="nav-container">
+        <ul class="quicknavbar-nav">
+          <li class="nav-item">
+            <a href="index.html">
+              <div class="nav-content">
+                <div class="nav-app">
+                  <div class="home">
+                    <img src="Trendles-dark-icon 2.png" alt="Home">
+                  </div>
+                </div>
+                <span>Home</span>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="Events.html">
+              <div class="nav-content">
+                <div class="nav-app">
+                  <img src="Magazine.png" alt="Magazine">
+                </div>
+                <span>Events</span>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="Magazine.html">
+              <div class="nav-content">
+                <div class="nav-app">
+                  <img src="Magazine.png" alt="Magazine">
+                </div>
+                <span>Magazine</span>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="litsoc.html">
+              <div class="nav-content">
+                <div class="nav-app">
+                  <img src="Literary.png" alt="litsoc">
+                </div>
+                <span>Litsoc</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-container">
+        <ul class="quicknavbar-nav">
+          <li class="nav-item">
+            <a href="chitrachaya.html">
+              <div class="nav-content">
+                <div class="nav-app">
+                  <img src="Photo.png" alt="Chitrachaya">
+                </div>
+                <span>Chitrachaya</span>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="design.html">
+              <div class="nav-content">
+                <div class="nav-app">
+                  <img src="Design.png" alt="Design">
+                </div>
+                <span>Design</span>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="Our Team.html">
+              <div class="nav-content">
+                <div class="nav-app">
+                  <img src="Video.png" alt="Our Team">
+                </div>
+                <span>Our Team</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div><br>
+    </div>
+  </nav>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <div class="container">
+    <div class="left-content">
+      <div class="text-content"><br>
+        <p class="head">THE POWER OF LITERATURE,</p>
+        <p class="para">in the palm of your hands, amazing isn’t it? The Literary Club
+          of IIITK with its storied past is delighted to present to you the wonders of literature, from all around the
+          world.
+          Marvel in the beauty of words as they twist you by the heartstrings and take you to the cusp of greatness.
+        </p>
+      </div>
+    </div>
+    <div class="image-content">
+      <img src="LITSOC BEFORE.png" alt="Dance Icon" />
+    </div>
+  </div>
+  <div class="button-filter">
+    <button id="button1" class="sub" onclick="toggleDiv('div1', this)">Literature</button>
+    <button id="button2" class="sub" onclick="toggleDiv('div2', this)">Manga</button>
+    <button id="button3" class="sub" onclick="toggleDiv('div3', this)">Quizzing & Debatting</button>
+  </div>
+  <div id="div1" class="content-div">
+    <br>
+    <p class="hh">Literature</p>
+    <p class="con">Welcome to the Literature Club! Our club is a haven for book lovers and literary enthusiasts of all
+      levels. We explore a wide range of genres, from classic novels to contemporary works, fostering a deep
+      appreciation for the written word. Our meetings feature book discussions to share insights and interpretations,
+      writing workshops to nurture creativity, and author events to gain new perspectives. Join us to connect with
+      fellow literature lovers, share recommendations, and immerse yourself in the world of books. Whether you're here
+      to discover new reads or showcase your writing, our club is the perfect place to celebrate the joy of literature.
+    </p>
+    <br>
+    <p class="hh">POETRY</p>
+    <div class="box-wrap">
+      <img src="left-arrow.png" id="backBtn1">
+      <div class="content-box" id="contentBox1">
+        <div class="box">
+          <p class="preview-text" id="preview1"></p>
+          <a class="open" data-modal-target="#modal1">Read more</a>
+        </div>
+        <div>
+          <div class="modal-container" id="modal1">
+            <div>
+              <div class="close">Close<img src="into.png" height="20px" width="20px"></div><br>
+              <div class="modal">
+                <p class="full-text">Today is the anniversary of the publication of Robert Frost’s iconic poem “Stopping
+                  by
+                  Woods on a Snowy Evening,” a fact that spurred the Literary Hub office into a long conversation about
+                  their
+                  favorite poems, the most iconic poems written in English, and which poems we should all have already
+                  read
+                  (or
+                  at least be reading next).</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <p class="preview-text" id="preview2"></p>
+          <a class="open" data-modal-target="#modal2">Read more</a>
+        </div>
+        <div class="modal-container" id="modal2">
+          <div>
+            <div class="close">Close<img src="into.png" height="20px" width="20px"></div><br>
+            <div class="modal">
+              <p class="full-text">Today is the anniversary of the publication of Robert Frost’s iconic poem “Stopping
+                by
+                Woods on a Snowy Evening,” a fact that spurred the Literary Hub office into a long conversation about
+                their
+                favorite poems, the most iconic poems written in English, and which poems we should all have already
+                read
+                (or
+                at least be reading next). Turns out, despite frequent (false) claims that poetry is dead and/or
+                irrelevant
+                and/or boring, there are plenty of poems that have sunk deep into our collective consciousness as
+                cultural
+                icons. (What makes a poem iconic? For our purposes here, it’s primarily a matter of cultural ubiquity,
+                though
+                unimpeachable excellence helps any case.) So for those of you who were not present for our epic office
+                argument, I have listed some of them here.
+
+                NB that I limited myself to one poem per poet—which means that the impetus for this list actually gets
+                bumped
+                for the widely quoted (and misunderstood) “The Road Not Taken,” but so it goes. I also excluded
+                book-length
+                poems, because they’re really a different form. Finally, despite the headline, I’m sure there are many,
+                many
+                iconic poems out there that I’ve missed—so feel free to extend this list in the comments. But for now,
+                happy
+                reading (and re-reading):</p>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <p class="preview-text" id="preview3"></p>
+          <a class="open" data-modal-target="#modal3">Read more</a>
+        </div>
+        <div class="modal-container" id="modal3">
+          <div>
+            <div class="close">Close<img src="into.png" height="20px" width="20px"></div><br>
+            <div class="modal">
+              <p class="full-text">hiToday is the anniversary of the publication of Robert Frost’s iconic poem “Stopping
+                by
+                Woods on a Snowy Evening,” a fact that spurred the Literary Hub office into a long conversation about
+                their
+                favorite poems, the most iconic poems written in English, and which poems we should all have already
+                read
+                (or
+                at least be reading next). Turns out, despite frequent (false) claims that poetry is dead and/or
+                irrelevant
+                and/or boring, there are plenty of poems that have sunk deep into our collective consciousness as
+                cultural
+                icons. (What makes a poem iconic? For our purposes here, it’s primarily a matter of cultural ubiquity,
+                though
+                unimpeachable excellence helps any case.) So for those of you who were not present for our epic office
+                argument, I have listed some of them here.
+
+                NB that I limited myself to one poem per poet—which means that the impetus for this list actually gets
+                bumped
+                for the widely quoted (and misunderstood) “The Road Not Taken,” but so it goes. I also excluded
+                book-length
+                poems, because they’re really a different form. Finally, despite the headline, I’m sure there are many,
+                many
+                iconic poems out there that I’ve missed—so feel free to extend this list in the comments. But for now,
+                happy
+                reading (and re-reading):</p>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <p class="preview-text" id="preview4"></p>
+          <a class="open" data-modal-target="#modal4">Read more</a>
+        </div>
+        <div class="modal-container" id="modal4">
+          <div>
+            <div class="close">Close<img src="into.png" height="20px" width="20px"></div><br>
+            <div class="modal">
+              <p class="full-text">Today is the anniversary of the publication of Robert Frost’s iconic poem “Stopping
+                by
+                Woods on a Snowy Evening,” a fact that spurred the Literary Hub office into a long conversation about
+                their
+                favorite poems, the most iconic poems written in English, and which poems we should all have already
+                read
+                (or
+                at least be reading next).</p>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <p class="preview-text" id="preview5"></p>
+          <a class="open" data-modal-target="#modal5">Read more</a>
+        </div>
+        <div class="modal-container" id="modal5">
+          <div>
+            <div class="close">Close<img src="into.png" height="20px" width="20px"></div><br>
+            <div class="modal">
+              <p class="full-text">Today is the anniversary of the publication of Robert Frost’s iconic poem “Stopping
+                by
+                Woods on a Snowy Evening,” a fact that spurred the Literary Hub office into a long conversation about
+                their
+                favorite poems, the most iconic poems written in English, and which poems we should all have already
+                read
+                (or
+                at least be reading next). Turns out, despite frequent (false) claims that poetry is dead and/or
+                irrelevant
+                and/or boring, there are plenty of poems that have sunk deep into our collective consciousness as
+                cultural
+                icons. (What makes a poem iconic? For our purposes here, it’s primarily a matter of cultural ubiquity,
+                though
+                unimpeachable excellence helps any case.) So for those of you who were not present for our epic office
+                argument, I have listed some of them here.
+
+                NB that I limited myself to one poem per poet—which means that the impetus for this list actually gets
+                bumped
+                for the widely quoted (and misunderstood) “The Road Not Taken,” but so it goes. I also excluded
+                book-length
+                poems, because they’re really a different form. Finally, despite the headline, I’m sure there are many,
+                many
+                iconic poems out there that I’ve missed—so feel free to extend this list in the comments. But for now,
+                happy
+                reading (and re-reading):</p>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <p class="preview-text" id="preview6"></p>
+          <a class="open" data-modal-target="#modal6">Read more</a>
+        </div>
+        <div class="modal-container" id="modal6">
+          <div>
+            <div class="close">Close<img src="into.png" height="20px" width="20px"></div><br>
+            <div class="modal">
+              <p class="full-text">hiToday is the anniversary of the publication of Robert Frost’s iconic poem “Stopping
+                by
+                Woods on a Snowy Evening,” a fact that spurred the Literary Hub office into a long conversation about
+                their
+                favorite poems, the most iconic poems written in English, and which poems we should all have already
+                read
+                (or
+                at least be reading next). Turns out, despite frequent (false) claims that poetry is dead and/or
+                irrelevant
+                and/or boring, there are plenty of poems that have sunk deep into our collective consciousness as
+                cultural
+                icons. (What makes a poem iconic? For our purposes here, it’s primarily a matter of cultural ubiquity,
+                though
+                unimpeachable excellence helps any case.) So for those of you who were not present for our epic office
+                argument, I have listed some of them here.
+
+                NB that I limited myself to one poem per poet—which means that the impetus for this list actually gets
+                bumped
+                for the widely quoted (and misunderstood) “The Road Not Taken,” but so it goes. I also excluded
+                book-length
+                poems, because they’re really a different form. Finally, despite the headline, I’m sure there are many,
+                many
+                iconic poems out there that I’ve missed—so feel free to extend this list in the comments. But for now,
+                happy
+                reading (and re-reading):</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <img src="right-arrow.png" id="nextBtn1">
+    </div>
+    <b>
+      <div class="additional">
+        <p class="hh">PROSE</p>
+      </div>
+    </b>
+    <div class="box-wrap">
+      <img src="left-arrow.png" id="backBtn2">
+      <div class="content-box" id="contentBox2">
+        <div class="box">
+          <p class="preview-text" id="preview7"></p>
+          <a class="open" data-modal-target="#modal7">Read more</a>
+        </div>
+        <div>
+          <div class="modal-container" id="modal7">
+            <div>
+              <div class="close">Close<img src="into.png" height="20px" width="20px"></div><br>
+              <div class="modal">
+                <p class="full-text">Today is the anniversary of the publication of Robert Frost’s iconic poem “Stopping
+                  by
+                  Woods on a Snowy Evening,” a fact that spurred the Literary Hub office into a long conversation about
+                  their
+                  favorite poems, the most iconic poems written in English, and which poems we should all have already
+                  read
+                  (or
+                  at least be reading next).</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <p class="preview-text" id="preview8"></p>
+          <a class="open" data-modal-target="#modal8">Read more</a>
+        </div>
+        <div class="modal-container" id="modal8">
+          <div>
+            <div class="close">Close<img src="into.png" height="20px" width="20px"></div><br>
+            <div class="modal">
+              <p class="full-text">Today is the anniversary of the publication of Robert Frost’s iconic poem “Stopping
+                by
+                Woods on a Snowy Evening,” a fact that spurred the Literary Hub office into a long conversation about
+                their
+                favorite poems, the most iconic poems written in English, and which poems we should all have already
+                read
+                (or
+                at least be reading next). Turns out, despite frequent (false) claims that poetry is dead and/or
+                irrelevant
+                and/or boring, there are plenty of poems that have sunk deep into our collective consciousness as
+                cultural
+                icons. (What makes a poem iconic? For our purposes here, it’s primarily a matter of cultural ubiquity,
+                though
+                unimpeachable excellence helps any case.) So for those of you who were not present for our epic office
+                argument, I have listed some of them here.
+
+                NB that I limited myself to one poem per poet—which means that the impetus for this list actually gets
+                bumped
+                for the widely quoted (and misunderstood) “The Road Not Taken,” but so it goes. I also excluded
+                book-length
+                poems, because they’re really a different form. Finally, despite the headline, I’m sure there are many,
+                many
+                iconic poems out there that I’ve missed—so feel free to extend this list in the comments. But for now,
+                happy
+                reading (and re-reading):</p>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <p class="preview-text" id="preview9"></p>
+          <a class="open" data-modal-target="#modal9">Read more</a>
+        </div>
+        <div class="modal-container" id="modal9">
+          <div>
+            <div class="close">Close<img src="into.png" height="20px" width="20px"></div><br>
+            <div class="modal">
+              <p class="full-text">hiToday is the anniversary of the publication of Robert Frost’s iconic poem “Stopping
+                by
+                Woods on a Snowy Evening,” a fact that spurred the Literary Hub office into a long conversation about
+                their
+                favorite poems, the most iconic poems written in English, and which poems we should all have already
+                read
+                (or
+                at least be reading next). Turns out, despite frequent (false) claims that poetry is dead and/or
+                irrelevant
+                and/or boring, there are plenty of poems that have sunk deep into our collective consciousness as
+                cultural
+                icons. (What makes a poem iconic? For our purposes here, it’s primarily a matter of cultural ubiquity,
+                though
+                unimpeachable excellence helps any case.) So for those of you who were not present for our epic office
+                argument, I have listed some of them here.
+
+                NB that I limited myself to one poem per poet—which means that the impetus for this list actually gets
+                bumped
+                for the widely quoted (and misunderstood) “The Road Not Taken,” but so it goes. I also excluded
+                book-length
+                poems, because they’re really a different form. Finally, despite the headline, I’m sure there are many,
+                many
+                iconic poems out there that I’ve missed—so feel free to extend this list in the comments. But for now,
+                happy
+                reading (and re-reading):</p>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <p class="preview-text" id="preview10"></p>
+          <a class="open" data-modal-target="#modal10">Read more</a>
+        </div>
+        <div class="modal-container" id="modal10">
+          <div>
+            <div class="close">Close<img src="into.png" height="20px" width="20px"></div><br>
+            <div class="modal">
+              <p class="full-text">Today is the anniversary of the publication of Robert Frost’s iconic poem “Stopping
+                by
+                Woods on a Snowy Evening,” a fact that spurred the Literary Hub office into a long conversation about
+                their
+                favorite poems, the most iconic poems written in English, and which poems we should all have already
+                read
+                (or
+                at least be reading next).</p>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <p class="preview-text" id="preview11"></p>
+          <a class="open" data-modal-target="#modal11">Read more</a>
+        </div>
+        <div class="modal-container" id="modal11">
+          <div>
+            <div class="close">Close<img src="into.png" height="20px" width="20px"></div><br>
+            <div class="modal">
+              <p class="full-text">Today is the anniversary of the publication of Robert Frost’s iconic poem “Stopping
+                by
+                Woods on a Snowy Evening,” a fact that spurred the Literary Hub office into a long conversation about
+                their
+                favorite poems, the most iconic poems written in English, and which poems we should all have already
+                read
+                (or
+                at least be reading next). Turns out, despite frequent (false) claims that poetry is dead and/or
+                irrelevant
+                and/or boring, there are plenty of poems that have sunk deep into our collective consciousness as
+                cultural
+                icons. (What makes a poem iconic? For our purposes here, it’s primarily a matter of cultural ubiquity,
+                though
+                unimpeachable excellence helps any case.) So for those of you who were not present for our epic office
+                argument, I have listed some of them here.
+
+                NB that I limited myself to one poem per poet—which means that the impetus for this list actually gets
+                bumped
+                for the widely quoted (and misunderstood) “The Road Not Taken,” but so it goes. I also excluded
+                book-length
+                poems, because they’re really a different form. Finally, despite the headline, I’m sure there are many,
+                many
+                iconic poems out there that I’ve missed—so feel free to extend this list in the comments. But for now,
+                happy
+                reading (and re-reading):</p>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <p class="preview-text" id="preview12"></p>
+          <a class="open" data-modal-target="#modal12">Read more</a>
+        </div>
+        <div class="modal-container" id="modal12">
+          <div>
+            <div class="close">Close<img src="into.png" height="20px" width="20px"></div><br>
+            <div class="modal">
+              <p class="full-text">hiToday is the anniversary of the publication of Robert Frost’s iconic poem “Stopping
+                by
+                Woods on a Snowy Evening,” a fact that spurred the Literary Hub office into a long conversation about
+                their
+                favorite poems, the most iconic poems written in English, and which poems we should all have already
+                read
+                (or
+                at least be reading next). Turns out, despite frequent (false) claims that poetry is dead and/or
+                irrelevant
+                and/or boring, there are plenty of poems that have sunk deep into our collective consciousness as
+                cultural
+                icons. (What makes a poem iconic? For our purposes here, it’s primarily a matter of cultural ubiquity,
+                though
+                unimpeachable excellence helps any case.) So for those of you who were not present for our epic office
+                argument, I have listed some of them here.
+
+                NB that I limited myself to one poem per poet—which means that the impetus for this list actually gets
+                bumped
+                for the widely quoted (and misunderstood) “The Road Not Taken,” but so it goes. I also excluded
+                book-length
+                poems, because they’re really a different form. Finally, despite the headline, I’m sure there are many,
+                many
+                iconic poems out there that I’ve missed—so feel free to extend this list in the comments. But for now,
+                happy
+                reading (and re-reading):</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="right-arrow.png" id="nextBtn2">
+    </div>
+  </div>
+  <div id="div2" class="content-div">
+    <div class="block">
+      <p class="hh">Manga</p>
+      <p class="con">
+        Welcome to the Manga Club! Our club is a haven for manga enthusiasts of all levels. We explore Japanese comics,
+        delving into genres like action, romance, and fantasy. Our meetings feature reading sessions to discuss favorite
+        series, drawing workshops for artists, and cosplay events for character dress-up. Join us to connect with fellow
+        manga lovers, share recommendations, and immerse yourself in manga culture. Whether you want to discover new
+        stories or showcase your artwork, our club is the perfect place to celebrate this captivating art form.</p>
+    </div>
+  </div>
+  <div id="div3" class="content-div">
+    <div class="block">
+      <p class="hh">Quizzing & Debating</p>
+      <p class="con">Welcome to the Quizzing and Debating Club! Our club is a vibrant community for enthusiasts of all
+        levels. We explore a wide range of topics, from current events to historical facts, fostering a love for
+        knowledge
+        and critical thinking. Our meetings feature quiz sessions to test your knowledge and debates to hone your
+        argumentation skills. Join us to connect with fellow quizzing and debating lovers, share insights, and engage in
+        stimulating discussions. Whether you want to improve your knowledge or polish your debating skills, our club is
+        the perfect place to celebrate the art of inquiry and discourse.</p>
+    </div>
+  </div>
+  <div class="end">
+    <div style="align-items: center;margin-top: 1rem;">
+      <a href="#instagram"><button class="icon"><i class="fa-brands fa-instagram"></i></button></a>
+      <a href="#youtube"><button class="icon"><i class="fa-brands fa-youtube"></i></button></a>
+      <a href="#mail"><button class="icon"><i class="far fa-envelope"></i></button></a>
+      <a href="https://www.linkedin.com/company/trendles/"><button class="icon"><i
+            class="fab fa-linkedin"></i></button></a>
+    </div><br>
+    <p style="margin: 0;">trendles@iiitkottayam.ac.in</p>
+    <p style="margin: 0;">Copyright © 2024 by Trendles | All Rights Reserved</p>
+    <p>Indian Institute of Information Technology Kottayam</p>
+  </div>
+  <script src="trendles.js"></script>
+</body>
+
+</html>
