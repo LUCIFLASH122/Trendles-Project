@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background:none;" id="regularNavbar">
+        <a class="navbar-brand" href="#"><img src="Trendles-icon.png" alt="Logo" /></a>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Events.html">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Magazine.html">Magazine</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Clubs
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="litsoc.html">Litsoc</a>
+                        <a class="dropdown-item" href="chitrachaya.html">Chitrachaya</a>
+                        <a class="dropdown-item" href="design.html">Design</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Our Team.html">Our Team</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background:none; display: none;" id="quickMenu">
+        <a class="navbar-brand" href="#"><img src="Trendles-icon.png" alt="Logo" /></a>
+        <button class="navbar-toggler" align="right" type="button" onclick="toggleQuickMenu()">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="quick-menu" id="quickMenuContent">
+            <a class="navbar-brand1" href="#"><img src="Trendles-icon.png" alt="Logo" /></a>
+            <div class="close-button"><img src="into.png" height="20px" width="20px"></div>
+            <p align="center" style="font-size: 20px;">Quick Menu</p>
+            <div class="nav-container">
+                <ul class="quicknavbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html">
+                            <div class="nav-content">
+                                <div class="nav-app">
+                                    <div class="home">
+                                        <img src="Trendles-dark-icon 2.png" alt="Home">
+                                    </div>
+                                </div>
+                                <span>Home</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Events.html">
+                            <div class="nav-content">
+                                <div class="nav-app">
+                                    <img src="Magazine.png" alt="Magazine">
+                                </div>
+                                <span>Events</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Magazine.html">
+                            <div class="nav-content">
+                                <div class="nav-app">
+                                    <img src="Magazine.png" alt="Magazine">
+                                </div>
+                                <span>Magazine</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="litsoc.html">
+                            <div class="nav-content">
+                                <div class="nav-app">
+                                    <img src="Literary.png" alt="litsoc">
+                                </div>
+                                <span>Litsoc</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-container">
+                <ul class="quicknavbar-nav">
+                    <li class="nav-item">
+                        <a href="chitrachaya.html">
+                            <div class="nav-content">
+                                <div class="nav-app">
+                                    <img src="Photo.png" alt="Chitrachaya">
+                                </div>
+                                <span>Chitrachaya</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="design.html">
+                            <div class="nav-content">
+                                <div class="nav-app">
+                                    <img src="Design.png" alt="Design">
+                                </div>
+                                <span>Design</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Our Team.html">
+                            <div class="nav-content">
+                                <div class="nav-app">
+                                    <img src="Video.png" alt="Our Team">
+                                </div>
+                                <span>Our Team</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div><br>
+        </div>
+    </nav>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <div class="container">
+        <div class="left-content">
+            <div class="text-content"><br>
+                <p class="head">NIRHAAR, OUR OWN MAGAZINE,</p>
+                <p class="para">Egestas nisi ullamcorper consequat ultricies nunc etiam scelerisque interdum libero.
+                    Cras nisl euismod ultrices velit blandit. Lacus, adipiscing enim semper felis. At in adipiscing eget
+                    hendrerit. Id dolor tristique mauris, natoque praesent. </p>
+            </div>
+        </div>
+        <div class="image-content">
+            <img src="Magazine image.png" alt="Magazine icon" />
+        </div>
+    </div>
+    <p class="year-head">2022</p>
+    <div class="imgcon">
+        <div class="imgmodal">
+            <img src="Nirhaar 2.0.png">
+        </div>
+        <div class="conmodal">
+            <p class="Name">Nirhaar 2.0 | 2022</p>
+            <p class="concon">&nbsp;&nbsp;&nbsp;&nbsp;The 2022 Edition of our very own magazine is here! Live and fresh
+                off the press. What are you waiting for? Take a look!The 2022 Edition of our very own magazine is here!
+                Live and fresh off the press. What are you waiting for? Take a look!The 2022 Edition of our very own
+                magazine is here! Live and fresh off the press. What are you waiting for? Take a look!The 2022 Edition
+                of our very own magazine is here! Live and fresh off the press. What are you waiting for? Take a look!
+            </p>
+            <a href="#" style="margin-left: 1rem;" class="custom">
+                <p>Read Now</p>
+            </a>
+        </div>
+    </div>
+    <p class="year-head">2021</p>
+    <div class="imgcon">
+        <div class="imgmodal">
+            <img src="Nirhaar 1.0.png">
+        </div>
+        <div class="conmodal">
+            <p class="Name">Nirhaar 1.0 | 2021</p>
+            <p class="concon">&nbsp;&nbsp;&nbsp;&nbsp;The 2022 Edition of our very own magazine is here! Live and fresh
+                off the press. What are you waiting for? Take a look!The 2022 Edition of our very own magazine is here!
+                Live and fresh off the press. What are you waiting for? Take a look!The 2022 Edition of our very own
+                magazine is here! Live and fresh off the press. What are you waiting for? Take a look!The 2022 Edition
+                of our very own magazine is here! Live and fresh off the press. What are you waiting for? Take a look!
+            </p>
+            <a href="#" style="margin-left: 1rem;" class="custom">
+                <p>Read Now</p>
+            </a>
+        </div>
+    </div>
+    <div class="end">
+        <div style="align-items: center;margin-top: 1rem;">
+            <a href="#instagram"><button class="icon"><i class="fa-brands fa-instagram"></i></button></a>
+            <a href="#youtube"><button class="icon"><i class="fa-brands fa-youtube"></i></button></a>
+            <a href="#mail"><button class="icon"><i class="far fa-envelope"></i></button></a>
+            <a href="https://www.linkedin.com/company/trendles/"><button class="icon"><i
+                        class="fab fa-linkedin"></i></button></a>
+        </div><br>
+        <p style="margin: 0;">trendles@iiitkottayam.ac.in</p>
+        <p style="margin: 0;">Copyright © 2024 by Trendles | All Rights Reserved</p>
+        <p>Indian Institute of Information Technology Kottayam</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
