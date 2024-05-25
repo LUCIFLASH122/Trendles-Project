@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(135deg, #000b2c 0%, #000000 75%);
+    background: linear-gradient(135deg, #001143 0%, #000000 75%);
     font-family: 'Poppins', sans-serif;
     color: white;
     margin: 0;
@@ -241,14 +241,15 @@ h1 {
 }
 
 .head {
-    font-size: 2rem;
-    font-weight: bold;
+    font-size: 2.2rem;
+    font-weight: bolder;
 }
 
 .para {
     font-size: 1.4rem;
 }
-.con{
+
+.con {
     margin-left: 4rem;
     margin-right: 1rem;
     font-size: 1.4rem;
@@ -424,8 +425,8 @@ h1 {
 .box {
     width: 25rem;
     height: 25rem;
-    border: 0.06rem solid #3C3C3C;
-    background-color: rgba(80, 80, 80, 0.2);
+    border: 0.06rem solid #ffffff;
+    background: linear-gradient(150deg, #000000 0%, #5d5b5b 70%) !important;
     box-shadow: 0rem 0.25rem 0.25rem 0rem rgba(0, 0, 0, 0.25);
     padding: 1.25rem;
     border-radius: 1.25rem;
@@ -537,7 +538,7 @@ h1 {
 }
 
 .end {
-    border-top: linear-gradient(180deg, #ffffff 0%, #000b2d 50%)solid 10px;
+    border-top: 1px solid #ffffff;
     background-color: rgb(0, 0, 1);
     height: auto;
     font-weight: 1000;
@@ -612,13 +613,14 @@ h1 {
     align-items: center;
     justify-content: center;
 }
+
 .custom-link {
     text-decoration: none;
     color: inherit;
 }
 
 .custom-link p {
-    color: #ffffff; 
+    color: #666262;
 }
 
 .profile {
@@ -646,7 +648,7 @@ h1 {
     width: calc(100% - 2rem);
     border-radius: 32px;
     border: 1px solid #9c9898cc;
-    background: rgb(70, 68, 68);
+    background: linear-gradient(180deg, #000000 0%, #212121 50%, #616161 90%);
     box-shadow: 0px 4px 4px 0px #00000040;
     padding: 1rem;
     overflow: hidden;
@@ -873,4 +875,121 @@ h1 {
     .timeline ul li:nth-child(even) div {
         left: -175px;
     }
+}
+
+.mentor {
+    text-align: center;
+    flex: 1 0 150px;
+    font-size: 10px;
+
+}
+
+.mentor img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.men {
+    font-size: 1.8rem;
+    font-weight: bolder;
+    text-align: center;
+    margin-left: 0;
+
+}
+
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.leads {
+    font-size: 1.8rem;
+    font-weight: bolder;
+    text-align: center;
+    margin-left: 0;
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 20px;
+}
+
+.name,
+.club {
+    font-size: 20px;
+}
+
+.year-head{
+    font-size: 2.2rem;
+    font-weight: bolder;
+    margin-left: 3rem;
+}
+
+.imgcon{
+    display: flex;
+    flex-direction: row;
+    margin: 2rem;
+}
+
+.imgmodal{
+    width: 20%;
+    height: auto;
+    border: 0.06rem solid #ffffff;
+    background: linear-gradient(150deg, #000000 0%, #5d5b5b 70%) !important;
+    box-shadow: 0rem 0.25rem 0.25rem 0rem rgba(0, 0, 0, 0.25);
+    border-radius: 1.7rem;
+    margin: 0 0.7rem;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.conmodal{
+    width: 75%;
+    height: auto;
+    border: 0.06rem solid #ffffff;
+    background: linear-gradient(165deg, #000000 0%,#000000 40%, #2e2d2d 60%,#3C3C3C 75%) !important;
+    box-shadow: 0rem 0.25rem 0.25rem 0rem rgba(0, 0, 0, 0.25);
+    padding: 1.25rem;
+    border-radius: 1.25rem;
+    margin: 0 0.7rem;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Name {
+    font-size: 2.6rem;
+    font-weight: bolder;
+    margin-left: 2rem;
+}
+
+.concon {
+    font-size: 1.4rem;
+    margin-left: 1rem;
+}
+
+.custom {
+    text-decoration: none;
+    color: inherit;
+}
+
+.custom p {
+    font-size: 1.2rem;
+    color: #948f8f;
+    font-weight: bolder;
 }
