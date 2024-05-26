@@ -58,6 +58,8 @@ h1 {
 
 .navbar .dropdown-menu .dropdown-item:hover {
     background-color: inherit;
+    color: orange;
+    font-size: 1.5rem;
 }
 
 .navbar-toggler {
@@ -225,6 +227,8 @@ h1 {
     align-items: flex-start;
     max-width: 100%;
     overflow-x: hidden;
+    margin-right: 0;
+    padding-right: 0;
 }
 
 .left-content {
@@ -263,6 +267,7 @@ h1 {
 .image-content img {
     width: 100%;
     height: auto;
+    max-width: 60vh !important;
 }
 
 @media (max-width: 52.5rem) {
