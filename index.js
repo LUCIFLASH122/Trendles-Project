@@ -102,28 +102,38 @@ closeButton.addEventListener('click', function () {
     quickMenu.style.display = 'none';
 });
 document.addEventListener('DOMContentLoaded', () => {
+    // Initialize the sub buttons
+    initializeDefault('button1', 'div1', 'sub');
+
+    // Initialize the year buttons
+    initializeDefault('button1', 'div1', 'year');
+});
+
+function initializeDefault(defaultButtonId, defaultDivId, buttonType) {
     const hash = window.location.hash;
-    const defaultDiv = 'div1';
-    const defaultButton = 'button1';
+    const defaultButton = document.getElementById(defaultButtonId);
+    const defaultDiv = document.getElementById(defaultDivId);
 
     if (hash) {
         const targetDiv = hash.substring(1);
-        const targetButton = Array.from(document.querySelectorAll('.button-container button')).find(button => button.onclick.toString().includes(targetDiv));
+        const targetButton = document.querySelector(`.${buttonType}[onclick*="${targetDiv}"]`);
         if (targetButton) {
             toggleDiv(targetDiv, targetButton);
         } else {
-            document.getElementById(defaultButton).classList.add('active');
-            document.getElementById(defaultDiv).style.display = 'block';
+            defaultButton.classList.add('active');
+            defaultDiv.style.display = 'block';
         }
     } else {
-        document.getElementById(defaultButton).classList.add('active');
-        document.getElementById(defaultDiv).style.display = 'block';
+        defaultButton.classList.add('active');
+        defaultDiv.style.display = 'block';
     }
-});
+}
 
 function toggleDiv(divId, button) {
+    const isSub = button.classList.contains('sub');
+    const buttonClass = isSub ? 'sub' : 'year';
     const divs = document.querySelectorAll('.content-div');
-    const buttons = document.querySelectorAll('.button-container button');
+    const buttons = document.querySelectorAll(`.${buttonClass}`);
 
     divs.forEach(div => div.style.display = 'none');
     buttons.forEach(btn => btn.classList.remove('active'));
@@ -133,6 +143,7 @@ function toggleDiv(divId, button) {
 
     window.location.hash = divId;
 }
+
 
 document.addEventListener("DOMContentLoaded", function() {
     const items = document.querySelectorAll(".timeline ul li");
