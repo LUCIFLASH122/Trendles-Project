@@ -294,6 +294,8 @@ h1 {
     .para,
     .con {
         font-size: 1rem;
+        margin: 0;
+        text-align: center;
     }
 
     .image-content {
@@ -431,7 +433,7 @@ h1 {
     width: 25rem;
     height: 25rem;
     border: 0.06rem solid #ffffff;
-    background: linear-gradient(150deg, #000000 0%, #5d5b5b 70%) !important;
+    background: rgba(80, 80, 80, 0.3);
     box-shadow: 0rem 0.25rem 0.25rem 0rem rgba(0, 0, 0, 0.25);
     padding: 1.25rem;
     border-radius: 1.25rem;
@@ -653,7 +655,7 @@ h1 {
     width: calc(100% - 2rem);
     border-radius: 32px;
     border: 1px solid #9c9898cc;
-    background: linear-gradient(180deg, #000000 0%, #212121 50%, #616161 90%);
+    background: rgba(80, 80, 80, 0.3);
     box-shadow: 0px 4px 4px 0px #00000040;
     padding: 1rem;
     overflow: hidden;
@@ -717,7 +719,6 @@ h1 {
 
     .sub {
         font-size: 1.3rem !important;
-        border-radius: 25px !important;
     }
 
     .button-filter,
@@ -726,10 +727,21 @@ h1 {
     }
 
     .year {
-        font-size: 1.2rem;
+        font-size: 1.3rem !important;
         border-radius: 25px;
         margin-right: 20px;
         margin-left: 10px;
+    }
+}
+@media(max-width: 29rem){
+    .sub{
+        font-size: 1.2rem !important;
+    }
+
+    .year{
+        font-size: 1rem !important;
+        margin-left: 1rem !important;
+        margin-right: 0 !important;
     }
 }
 
@@ -737,9 +749,17 @@ h1 {
     width: auto;
     height: auto;
     font-size: 1.8rem;
-    border-radius: 50px;
+    border-radius: 1rem;
+    background-color: rgb(190, 190, 190);
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
+.sub.active {
+    background-color: black;
+    color: white;
+}
 .button-filter {
     display: flex;
     justify-content: space-around;
@@ -757,13 +777,16 @@ h1 {
 .year {
     width: auto;
     font-size: 1.5rem;
-    border-radius: 50px;
+    border-radius: 1rem;
     margin-right: 50px;
     margin-left: 20px;
+    background-color: rgb(190, 190, 190);
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
-
-button.active {
-    background-color: rgba(80, 80, 80, 0.2);
+.year.active {
+    background-color: black;
     color: white;
 }
 
@@ -803,7 +826,7 @@ h1 {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 0;
+    bottom: 20%;
 }
 
 .timeline ul li div {
@@ -815,11 +838,14 @@ h1 {
     border-radius: 1rem;
     bottom: 0;
     background: linear-gradient(30deg, #010923 0%, #04144a 50%, #010e39 60%, #010923 85%);
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s ease-in-out;
     white-space: nowrap;
 }
 
 .timeline ul li:nth-child(odd) div {
-    left: 45px;
+    left: 50px;
 }
 
 .timeline ul li:nth-child(even) div {
@@ -832,12 +858,6 @@ h1 {
     display: block;
     align-items: center;
     margin: 0;
-}
-
-.timeline ul li div {
-    visibility: hidden;
-    opacity: 0;
-    transition: all .5s ease-in-out;
 }
 
 .timeline ul li:nth-child(odd) div {
@@ -866,32 +886,47 @@ h1 {
     .timeline ul li:nth-child(even) div {
         left: -200px;
     }
+    .timeline ul li:nth-child(odd) div {
+        left: 30px;
+    }
 
     .timeline ul li div {
         font-size: 1rem;
+        max-width: 150px;
+        min-width: 80px;
+        white-space: normal;
     }
 
     .club {
-        font-size: 1.4rem;
+        font-size: 1.2rem !important;
+    }
+    .timeline ul li:nth-child(odd) div {
+        transform: translate3d(10px, 0, 0);
+    }
+
+    .timeline ul li:nth-child(even) div {
+        transform: translate3d(10px, 0, 0);
     }
 }
 
 @media(max-width:28rem) {
     .timeline ul li:nth-child(even) div {
-        left: -175px;
+        left: -160px;
+    }
+    .club{
+        font-size: 1rem !important;
     }
 }
 
 .mentor {
-    text-align: center;
-    flex: 1 0 150px;
-    font-size: 10px;
-
+    text-align:center;
+    flex:1 0 150px;
+    font-size:10px;
+    
 }
-
 .mentor img {
-    width: 150px;
-    height: 150px;
+    width:200px;
+    height:200px;
     border-radius: 50%;
     margin-bottom: 20px;
 }
@@ -901,7 +936,7 @@ h1 {
     font-weight: bolder;
     text-align: center;
     margin-left: 0;
-
+    
 }
 
 .container1 {
@@ -909,8 +944,8 @@ h1 {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
+    gap:20px;
+    padding:20px;
 }
 
 .leads {
@@ -925,13 +960,12 @@ h1 {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 50px;
-    padding: 20px;
+    gap:50px;
+    padding:20px;
 }
 
-.name,
-.club {
-    font-size: 20px;
+.name, .clubs {
+    font-size:20px;
 }
 
 .year-head{
@@ -965,7 +999,7 @@ h1 {
     width: 75%;
     height: auto;
     border: 0.06rem solid #ffffff;
-    background: linear-gradient(165deg, #000000 0%,#000000 40%, #2e2d2d 60%,#3C3C3C 75%) !important;
+    background:rgba(80, 80, 80, 0.3);
     box-shadow: 0rem 0.25rem 0.25rem 0rem rgba(0, 0, 0, 0.25);
     padding: 1.25rem;
     border-radius: 1.25rem;
