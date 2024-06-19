@@ -647,19 +647,22 @@ h1 {
 .eventh {
     font-size: 2rem;
     font-weight: bolder;
-    margin-left: 2rem;
+    margin: 0 auto; /* Center horizontally */
+    text-align: center;
 }
+
 
 .rectangle {
     display: flex;
-    width: calc(100% - 2rem);
+    width: 80%;
     border-radius: 32px;
     border: 1px solid #9c9898cc;
     background: rgba(80, 80, 80, 0.3);
     box-shadow: 0px 4px 4px 0px #00000040;
     padding: 1rem;
     overflow: hidden;
-    margin: 1rem;
+    margin: 1rem auto; /* Center horizontally */
+    align-items: center;
 }
 
 .event-content {
@@ -675,8 +678,7 @@ h1 {
 }
 
 .event-description {
-    font-size: 0.8125rem;
-    font-weight: 600;
+    font-size: 1rem;
 }
 
 .event-image {
@@ -769,7 +771,8 @@ h1 {
 
 .button-container {
     display: flex;
-    justify-content: row;
+    align-items: center;
+    justify-content: center; /* Center horizontally */
     margin-left: 20px;
     margin-bottom: 20px;
 }
@@ -1018,7 +1021,7 @@ h1 {
 }
 
 .concon {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin-left: 1rem;
 }
 
