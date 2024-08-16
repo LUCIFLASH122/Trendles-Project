@@ -164,7 +164,7 @@ h1 {
     height: 70px;
 }
 
-.nav-app {
+.nav-app,.nav-app1 {
     height: 70px;
     width: 70px;
     min-width: 70px;
@@ -182,6 +182,10 @@ h1 {
     max-height: 100%;
 }
 
+.nav-app1 img {
+    max-width: 75%;
+    max-height: 75%;
+}
 
 .home img {
     width: 100%;
@@ -191,7 +195,6 @@ h1 {
     display: block;
     text-align: center;
 }
-
 
 .quick-menu .navbar-nav .nav-item {
     margin: 0 1rem;
@@ -550,6 +553,8 @@ h1 {
     height: auto;
     font-weight: 1000;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 .design {
@@ -619,6 +624,15 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.prof1 p a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding-top: 1rem;
+    color: #807e7e;
 }
 
 .custom-link {
@@ -772,7 +786,7 @@ h1 {
 .button-container {
     display: flex;
     align-items: center;
-    justify-content: center; /* Center horizontally */
+    justify-content: center;
     margin-left: 20px;
     margin-bottom: 20px;
 }
@@ -852,7 +866,7 @@ h1 {
 }
 
 .timeline ul li:nth-child(even) div {
-    left: -200px;
+    left: -350px;
 }
 
 .club {
@@ -861,6 +875,10 @@ h1 {
     display: block;
     align-items: center;
     margin: 0;
+}
+
+.club-sub{
+    font-size: 1rem;
 }
 
 .timeline ul li:nth-child(odd) div {
@@ -902,6 +920,9 @@ h1 {
 
     .club {
         font-size: 1.2rem !important;
+    }
+    .club-sub{
+        font-size: 0.8rem !important;
     }
     .timeline ul li:nth-child(odd) div {
         transform: translate3d(10px, 0, 0);
@@ -983,9 +1004,23 @@ h1 {
     margin: 2rem;
 }
 
-.imgmodal{
-    width: 20%;
-    height: fit-content;
+.imgmodal img{
+    height: auto;
+    border: 0.06rem solid #ffffff;
+    background: linear-gradient(150deg, #000000 0%, #5d5b5b 70%) !important;
+    box-shadow: 0rem 0.25rem 0.25rem 0rem rgba(0, 0, 0, 0.25);
+    border-radius: 1.7rem;
+    margin: 0 0.7rem;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.imgmodal1 img{
+    width: 218.6px;
+    height: auto;
     border: 0.06rem solid #ffffff;
     background: linear-gradient(150deg, #000000 0%, #5d5b5b 70%) !important;
     box-shadow: 0rem 0.25rem 0.25rem 0rem rgba(0, 0, 0, 0.25);
