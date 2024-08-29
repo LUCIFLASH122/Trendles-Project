@@ -165,7 +165,8 @@ h1 {
     height: 70px;
 }
 
-.nav-app,.nav-app1 {
+.nav-app,
+.nav-app1 {
     height: 70px;
     width: 70px;
     min-width: 70px;
@@ -626,13 +627,25 @@ h1 {
     justify-content: center;
 }
 
-.prof1 p a{
+.prof1 p a:hover,
+.prof a p:hover,
+.prof:hover {
+    color: white !important;
+    text-decoration: none;
+}
+
+.prof1 p a {
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
     padding-top: 1rem;
     color: #807e7e;
+}
+
+.prof1 p a img {
+    color: #807e7e;
+    width: 1 rem !important;
 }
 
 .custom-link {
@@ -661,7 +674,8 @@ h1 {
 .eventh {
     font-size: 2rem;
     font-weight: bolder;
-    margin: 0 auto; /* Center horizontally */
+    margin: 0 auto;
+    /* Center horizontally */
     text-align: center;
 }
 
@@ -675,7 +689,8 @@ h1 {
     box-shadow: 0px 4px 4px 0px #00000040;
     padding: 1rem;
     overflow: hidden;
-    margin: 1rem auto; /* Center horizontally */
+    margin: 1rem auto;
+    /* Center horizontally */
     align-items: center;
 }
 
@@ -749,12 +764,13 @@ h1 {
         margin-left: 10px;
     }
 }
-@media(max-width: 29rem){
-    .sub{
+
+@media(max-width: 29rem) {
+    .sub {
         font-size: 1.2rem !important;
     }
 
-    .year{
+    .year {
         font-size: 1rem !important;
         margin-left: 1rem !important;
         margin-right: 0 !important;
@@ -766,16 +782,14 @@ h1 {
     height: auto;
     font-size: 1.8rem;
     border-radius: 1rem;
-    background-color: rgb(190, 190, 190);
-    color: black;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.sub.active {
+    border: 1px solid grey;
     background-color: black;
     color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: none;
 }
+
 .button-filter {
     display: flex;
     justify-content: space-around;
@@ -794,17 +808,22 @@ h1 {
 .year {
     width: auto;
     font-size: 1.5rem;
-    border-radius: 1rem;
+    border: 1px solid grey;
+    border-radius: 0.5rem;
     margin-right: 50px;
     margin-left: 20px;
-    background-color: rgb(190, 190, 190);
-    color: black;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-.year.active {
     background-color: black;
     color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: none;
+}
+
+.year.active,
+.sub.active {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
 }
 
 .content-div {
@@ -877,7 +896,7 @@ h1 {
     margin: 0;
 }
 
-.club-sub{
+.club-sub {
     font-size: 1rem;
 }
 
@@ -907,6 +926,7 @@ h1 {
     .timeline ul li:nth-child(even) div {
         left: -200px;
     }
+
     .timeline ul li:nth-child(odd) div {
         left: 30px;
     }
@@ -921,9 +941,11 @@ h1 {
     .club {
         font-size: 1.2rem !important;
     }
-    .club-sub{
+
+    .club-sub {
         font-size: 0.8rem !important;
     }
+
     .timeline ul li:nth-child(odd) div {
         transform: translate3d(10px, 0, 0);
     }
@@ -937,30 +959,34 @@ h1 {
     .timeline ul li:nth-child(even) div {
         left: -160px;
     }
-    .club{
+
+    .club {
         font-size: 1rem !important;
     }
 }
 
-.mentor {
-    text-align:center;
-    flex:1 0 150px;
-    font-size:10px;
-    
+.mentor,
+.developer {
+    text-align: center;
+    flex: 1 0 150px;
+    font-size: 10px;
+
 }
-.mentor img {
-    width:200px;
-    height:200px;
+
+.mentor img,
+.developer img {
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     margin-bottom: 20px;
 }
 
-.men {
+.men,
+.dev {
     font-size: 1.8rem;
     font-weight: bolder;
     text-align: center;
     margin-left: 0;
-    
 }
 
 .container1 {
@@ -968,8 +994,8 @@ h1 {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap:20px;
-    padding:20px;
+    gap: 20px;
+    padding: 20px;
 }
 
 .leads {
@@ -979,32 +1005,44 @@ h1 {
     margin-left: 0;
 }
 
-.container2 {
+.container2,
+.container3 {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap:50px;
-    padding:20px;
+    gap: 50px;
+    padding: 20px;
 }
 
-.name, .clubs {
-    font-size:20px;
+.name,
+.clubs {
+    font-size: 20px;
 }
 
-.year-head{
+.linkedin-icon {
+    font-size: 30px;
+    color: #0077b5;
+    text-decoration: none;
+}
+
+.linkedin-icon:hover {
+    color: #005582;
+}
+
+.year-head {
     font-size: 2.2rem;
     font-weight: bolder;
     margin-left: 3rem;
 }
 
-.imgcon{
+.imgcon {
     display: flex;
     flex-direction: row;
     margin: 2rem;
 }
 
-.imgmodal img{
+.imgmodal img {
     height: auto;
     border: 0.06rem solid #ffffff;
     background: linear-gradient(150deg, #000000 0%, #5d5b5b 70%) !important;
@@ -1018,7 +1056,7 @@ h1 {
     justify-content: space-between;
 }
 
-.imgmodal1 img{
+.imgmodal1 img {
     width: 218.6px;
     height: auto;
     border: 0.06rem solid #ffffff;
@@ -1033,11 +1071,11 @@ h1 {
     justify-content: space-between;
 }
 
-.conmodal{
+.conmodal {
     width: 75%;
     height: auto;
     border: 0.06rem solid #ffffff;
-    background:rgba(80, 80, 80, 0.3);
+    background: rgba(80, 80, 80, 0.3);
     box-shadow: 0rem 0.25rem 0.25rem 0rem rgba(0, 0, 0, 0.25);
     padding: 1.25rem;
     border-radius: 1.25rem;
@@ -1071,20 +1109,23 @@ h1 {
     font-weight: bolder;
 }
 
-@media(max-width:52.5rem){
+@media(max-width:52.5rem) {
     .year-head {
         text-align: center;
         margin: 0 auto;
-      }
-    .imgcon{
+    }
+
+    .imgcon {
         width: auto;
         justify-content: center;
         align-items: center;
     }
-    .imgmodal{
+
+    .imgmodal {
         width: auto;
     }
-    .conmodal{
+
+    .conmodal {
         display: none;
     }
 }
